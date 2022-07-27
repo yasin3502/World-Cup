@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: darkorange;
+}
+
+.container {
+    width: 1000px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+nav .menu>ui>li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.btn {
+    background-color: crimson;
+    padding: 10px 25px;
+    width: 120px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.banner-title {
+    margin: 20px;
+}
+
+.banner-title h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.btn-animation {
+    border-radius: 4px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    width: 200px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.button-animation span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-animation span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 00.5s;
+}
+
+.button-animation:hover span {
+    padding-right: 25px;
+}
+
+.button-animation:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.banner-item {
+    margin: 20px;
+    background-image: url('./assets/Banner\ Image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
