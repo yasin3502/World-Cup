@@ -3,9 +3,14 @@ body {
     padding: 0;
 }
 
+p {
+    color: aliceblue;
+
+}
+
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(24, 21, 21);
 }
 
 ul {
@@ -19,7 +24,9 @@ header {
 }
 
 .container {
-    width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 nav {
@@ -45,7 +52,7 @@ nav .menu>ui>li {
 .banner {
     display: flex;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 20%;
 }
 
 .banner-title {
@@ -97,7 +104,6 @@ nav .menu>ui>li {
 }
 
 .banner-item {
-    margin: 20px;
     background-image: url('./assets/Banner\ Image.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -130,4 +136,71 @@ main {
 
 .about {
     color: rgb(68, 65, 65);
+}
+
+.get-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 200px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(226, 164, 164) 0%, rgb(227, 113, 132) 35%, rgb(19, 19, 128) 100%);
+}
+
+.get-btn {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    width: 80%;
+}
+
+.card-parent {
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-parent {
+        display: block;
+    }
+
+    .card-parent-button {
+        display: flex;
+    }
+
+    .cards {
+        margin: 70px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .card-parent {
+        display: block;
+    }
+
+    .card-parent-button {
+        display: block;
+    }
+
+    .cards {
+        margin: 70px 0;
+        display: block;
+    }
+
+    .footer-elements {
+        display: block;
+        text-align: center;
+    }
+
+    .banner {
+        display: block;
+        max-width: 100%;
+    }
 }
